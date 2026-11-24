@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #07101c;
+  --line: #20334a;
+  --text: #f3f7fb;
+  --muted: #8fa2b8;
+  --accent: #78a9ff;
+  --accent2: #8be0c3;
+  --danger: #ff8f9d;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 80% -10%, rgba(84, 130, 210, 0.18), transparent 60%),
+    var(--bg);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.panel {
+  background: linear-gradient(145deg, rgba(17, 31, 49, 0.96), rgba(9, 20, 33, 0.96));
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+  background: linear-gradient(145deg, #172a42, #0b1625);
+}
+
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.select {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid #29415d;
+  background: #091522;
+  color: var(--text);
+  outline: none;
+}
+.select:focus {
+  border-color: var(--accent);
+}
+.select:disabled {
+  opacity: 0.5;
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 18px;
+  background: var(--text);
+  color: #08111c;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.18s, opacity 0.18s;
+}
+.btn:hover:enabled {
+  transform: translateY(-1px);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.insight {
+  padding: 13px 14px;
+  border-left: 2px solid var(--accent);
+  background: #0a1726;
+  border-radius: 0 12px 12px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 9px 0;
+}
